@@ -6,13 +6,13 @@
 /*   By: luis-fif <luis-fif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 10:18:21 by luis-fif          #+#    #+#             */
-/*   Updated: 2024/10/09 14:42:05 by luis-fif         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:52:27 by luis-fif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
 
-t_token	*create_tkn_lst(t_token *token)
+/*t_token	*create_tkn_lst(t_token *token)
 {
 	t_token *node;
 
@@ -22,7 +22,7 @@ t_token	*create_tkn_lst(t_token *token)
 		if (!node)
 			return (NULL);
 		node->next = NULL;
-		node->prev = NULL;
+		//node->prev = NULL;
 	}
 	else
 	{
@@ -30,4 +30,4 @@ t_token	*create_tkn_lst(t_token *token)
 	}
 
 	return (node);
-}
+}*/

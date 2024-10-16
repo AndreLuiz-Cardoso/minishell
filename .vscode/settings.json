@@ -62,5 +62,6 @@
     "stdlib.h": "c",
     "unistd.h": "c",
     "minishell.h": "c"
-  }
+  },
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc"
 }

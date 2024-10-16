@@ -6,7 +6,7 @@
 /*   By: luis-fif <luis-fif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 11:51:15 by luis-fif          #+#    #+#             */
-/*   Updated: 2024/10/16 10:39:27 by luis-fif         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:36:14 by luis-fif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,25 @@
 
 
 typedef struct s_token  t_token;
+typedef struct s_head	t_head;
+
+struct s_head
+{
+	t_token *next;
+};
 
 struct  s_token
 {
 	bool	double_quotes;
 	char	*token;
-	t_token	*prev;
+	//t_token	*prev;
 	t_token	*next;
 };
 
 //list_create
 t_token *create_tkn_lst(t_token *token);
 
-void	test_print(char *token);
+void test_print(t_head *head);
 
 // int g_signal = 0;s
 

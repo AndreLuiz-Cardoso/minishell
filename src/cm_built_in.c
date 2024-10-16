@@ -6,7 +6,7 @@
 /*   By: luis-fif <luis-fif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 12:41:24 by luis-fif          #+#    #+#             */
-/*   Updated: 2024/10/16 09:07:46 by luis-fif         ###   ########.fr       */
+/*   Updated: 2024/10/16 15:36:09 by luis-fif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ void builtin_cd(char **tokens)
     }
 
     // Supondo que tokens foi alocado dinamicamente, libere aqui
-    free_tokens(tokens);
+  ////  free_tokens(tokens);
 }
 
 int builtin_pwd(char **tokens)
@@ -124,7 +124,7 @@ int builtin_pwd(char **tokens)
     {
         //printf("pwd: too many arguments\n");
 		ft_print("pwd : too many arguments\n");
-		free_tokens(tokens);
+	////	free_tokens(tokens);
 		return (-1);
     }
     pwd = getcwd(NULL, 0);
@@ -139,7 +139,7 @@ int builtin_pwd(char **tokens)
 	{
 		 perror("pwd");
 	}
-    free_tokens(tokens);
+ ////   free_tokens(tokens);
 	return (0);
 }
 
